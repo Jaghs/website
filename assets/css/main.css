@@ -1364,11 +1364,11 @@ input, select, textarea {
 
 		}
 
-		/* CSS for mobile screens (adjust the max-width as needed) */
+		/* waving emoji for mobile screens */
 		@media screen and (max-width: 768px) {
 			header h1 img {
-	  			width: 30px; /* You can adjust the size as per your preference */
-	  			height: 28px;
+	  			width: 32px;
+	  			height: 30px;
 	}
   }
 
