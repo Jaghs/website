@@ -1372,6 +1372,22 @@ input, select, textarea {
 			}	
   		}
 
+		/* waving emoji for larger screens like 2K monitors */
+		@media screen and (min-width: 1440px) {
+			header h1 img {
+				width: 60px; 
+				height: 56px;
+			}
+		}
+		
+		/* waving emoji for larger screens like 2K monitors */
+		@media screen and (min-width: 1080px) {
+			header h1 img {
+				width: 55px; 
+				height: 52px;
+			}
+		}
+
 	strong, b, h1, h2, h3, h4, h5, h6 {
 		font-weight: bold;
 		color: #363636;
