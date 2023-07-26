@@ -1690,6 +1690,70 @@ input, select, textarea {
 			padding: 0.5em 1.25em 0.5em 1.25em;
 		}
 
+		/* Define the initial background color with 0% opacity (fully transparent) */
+		.resume-button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 0px;
+			font-size: 16px;
+			line-height: 1.5em;
+			margin-top: 1.0em;
+			/* Add transition to smoothly animate the background color change */
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		/* On hover, set the background color with 100% opacity (fully opaque) */
+		.resume-button:hover {
+			background-color: rgba(69, 160, 73, 1);
+		}
+
+		/* Common styles for the resume button */
+		.resume-button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 0px;
+			font-size: 16px;
+			line-height: 1.5em;
+			margin-top: 1.25em;
+			/* Add transition to smoothly animate the background color change */
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		/* Hover style remains the same */
+		.resume-button:hover {
+			background-color: rgba(69, 160, 73, 1);
+		}
+
+		/* Styles for mobile screens (up to 767px width) */
+		@media screen and (max-width: 767px) {
+			.resume-button {
+				font-size: 14px; /* Adjust font size for mobile */
+				padding: 8px 16px; /* Adjust padding for mobile */
+			}
+		}
+
+		/* Styles for tablets and larger screens (768px and above) */
+		@media screen and (min-width: 768px) {
+			.resume-button {
+				font-size: 14px; 
+				padding: 8px 16px; 
+			}
+		}
+
+		/* Additional styles for larger screens (e.g., desktops) */
+		@media screen and (min-width: 1200px) {
+			.resume-button {
+				font-size: 20px; 
+				padding: 14px 22px; 
+			}
+		}
+
 		@media screen and (max-width: 736px) {
 
 			input[type="button"],
