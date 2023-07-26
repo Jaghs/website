@@ -1388,8 +1388,13 @@ input, select, textarea {
 			}
 		}
 
-	strong, b, h1, h2, h3, h4, h5, h6 {
+	strong, b, h1, h2, h3{
 		font-weight: bold;
+		color: #363636;
+	}
+
+	h4, h5, h6 {
+		font-weight: 450;
 		color: #363636;
 	}
 
@@ -1403,10 +1408,21 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
-	h3, h4, h5, h6 {
+	h3 {
 		font-size: 1.25em;
 		letter-spacing: -0.015em;
 	}
+
+	h4, h5, h6 {
+		font-size: 1.0em;
+		letter-spacing: -0.015em;
+	}
+
+	/* Remove the margin-bottom for the "no-gap" class */
+	h4.no-gap {
+		margin-bottom: 0;
+	}
+  
 
 	@media screen and (max-width: 736px) {
 
@@ -1566,6 +1582,21 @@ input, select, textarea {
 			}
 
 		}
+
+	/* Add indentation to bullet points */
+		ul.indent {
+			padding-left: 35px; /* Adjust the value as needed for desired indentation */
+  		}
+  
+	/* Add gap to between icon and header for experiences */
+		.icon-header {
+			display: flex;
+			align-items: center;
+		}
+		  
+		.icon-header i {
+			margin-right: 10px; /* Adjust the value as needed */
+		}  
 
 /* Image */
 
