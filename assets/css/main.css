@@ -1720,26 +1720,6 @@ input, select, textarea {
 			padding: 0.5em 1.25em 0.5em 1.25em;
 		}
 
-		/* Define the initial background color with 0% opacity (fully transparent) */
-		.resume-button {
-			display: inline-block;
-			padding: 10px 20px;
-			background-color: #4CAF50;
-			color: #fff;
-			text-decoration: none;
-			border-radius: 0px;
-			font-size: 16px;
-			line-height: 1.5em;
-			margin-top: 1.0em;
-			/* Add transition to smoothly animate the background color change */
-			transition: background-color 0.3s ease-in-out;
-		}
-
-		/* On hover, set the background color with 100% opacity (fully opaque) */
-		.resume-button:hover {
-			background-color: rgba(69, 160, 73, 1);
-		}
-
 		/* Common styles for the resume button */
 		.resume-button {
 			display: inline-block;
