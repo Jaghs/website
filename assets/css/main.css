@@ -1765,6 +1765,7 @@ input, select, textarea {
 			font-size: 16px;
 			line-height: 1.5em;
 			margin-top: 1.25em;
+			margin-right: 5px;
 			/* Add transition to smoothly animate the background color change */
 			transition: background-color 0.3s ease-in-out;
 		}
@@ -1809,52 +1810,9 @@ input, select, textarea {
 			font-size: 16px;
 			line-height: 1.5em;
 			margin-top: 1.25em;
-			/* Add transition to smoothly animate the background color change */
-			transition: background-color 0.3s ease-in-out;
-		}
-
-		/* Hover style remains the same */
-		.linkedin-button:hover {
-			background-color: rgb(41, 95, 109);
-		}
-
-		/* Styles for mobile screens (up to 767px width) */
-		@media screen and (max-width: 767px) {
-			.linkedin-button {
-				font-size: 14px; /* Adjust font size for mobile */
-				padding: 8px 16px; /* Adjust padding for mobile */
-			}
-		}
-
-		/* Styles for tablets and larger screens (768px and above) */
-		@media screen and (min-width: 768px) {
-			.linkedin-button {
-				font-size: 14px; 
-				padding: 8px 16px; 
-			}
-		}
-
-		/* Additional styles for larger screens (e.g., desktops) */
-		@media screen and (min-width: 1200px) {
-			.resume-button {
-				font-size: 20px; 
-				padding: 14px 22px; 
-			}
-		}
-
-		/* linkedin button */
-		.linkedin-button {
-			display: inline-block;
-			padding: 10px 20px;
-			background-color: #23adc5;
-			color: #fff;
-			text-decoration: none;
-			border-radius: 0px;
-			font-size: 16px;
-			line-height: 1.5em;
-			margin-top: 1.25em;
 			justify-content: center;
 			align-items: center;
+			margin-right: 5px;
 			/* Add transition to smoothly animate the background color change */
 			transition: background-color 0.3s ease-in-out;
 		}
@@ -1901,6 +1859,7 @@ input, select, textarea {
 			margin-top: 1.25em;
 			justify-content: center;
 			align-items: center;
+			margin-right: 5px;
 			/* Add transition to smoothly animate the background color change */
 			transition: background-color 0.3s ease-in-out;
 		}
