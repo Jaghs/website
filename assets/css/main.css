@@ -1306,12 +1306,15 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlayy.png"), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background-size: 100% 100%; /* Ensure the background image covers the entire area */
+		background-position: center; /* Center the background image within the container */
 		background-attachment: fixed;
 		overflow-y: scroll;
-	}
+		margin: 0;
+		padding: 0;
+	  }	  
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
