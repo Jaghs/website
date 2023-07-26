@@ -18,12 +18,15 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+	overflow-x: hidden; 
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2443,17 +2446,6 @@ input, select, textarea {
 				margin-left: 0.5em;
 			}
 
-		}
-
-		/* Add this CSS to your stylesheets */
-		@media (max-width: 767px) {
-			body {
-				overflow: auto;
-			}
-			
-			.scrolling-container {
-				overflow: hidden;
-			}
 		}
   
   
