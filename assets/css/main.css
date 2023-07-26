@@ -2448,7 +2448,12 @@ input, select, textarea {
 		/* Add this CSS to your stylesheets */
 		@media (max-width: 767px) {
 			body {
-	  			overflow: hidden;
+				overflow: auto;
 			}
-  		}
+			
+			.scrolling-container {
+				overflow: hidden;
+			}
+		}
+  
   
