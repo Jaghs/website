@@ -18,11 +18,8 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -1054,7 +1051,13 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+		}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
