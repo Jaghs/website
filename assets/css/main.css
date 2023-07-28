@@ -2395,7 +2395,7 @@ input, select, textarea {
 	border-radius: 0px; /* Rounded corners */
 	border: none; /* Remove default border */
 	background-color: #ffffff; /* Card background color */
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.12); /* Add a subtle box shadow */
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15); /* Add a subtle box shadow */
 	padding: 20px;
 	text-align: center; /* Center the content horizontally inside each card */
 	position: relative;
