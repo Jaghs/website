@@ -1731,50 +1731,6 @@ input, select, textarea {
 			font-size: 16px;
 			line-height: 1.5em;
 			margin-top: 1.25em;
-			/* Add transition to smoothly animate the background color change */
-			transition: background-color 0.3s ease-in-out;
-		}
-
-		/* Hover style remains the same */
-		.resume-button:hover {
-			background-color: rgb(41, 95, 109);
-		}
-
-		/* Styles for mobile screens (up to 767px width) */
-		@media screen and (max-width: 767px) {
-			.resume-button {
-				font-size: 14px; /* Adjust font size for mobile */
-				padding: 8px 16px; /* Adjust padding for mobile */
-			}
-		}
-
-		/* Styles for tablets and larger screens (768px and above) */
-		@media screen and (min-width: 768px) {
-			.resume-button {
-				font-size: 14px; 
-				padding: 8px 16px; 
-			}
-		}
-
-		/* Additional styles for larger screens (e.g., desktops) */
-		@media screen and (min-width: 1200px) {
-			.resume-button {
-				font-size: 20px; 
-				padding: 14px 22px; 
-			}
-		}
-
-		/* resume button */
-		.resume-button {
-			display: inline-block;
-			padding: 10px 20px;
-			background-color: #23adc5;
-			color: #fff;
-			text-decoration: none;
-			border-radius: 0px;
-			font-size: 16px;
-			line-height: 1.5em;
-			margin-top: 1.25em;
 			margin-right: 5px;
 			/* Add transition to smoothly animate the background color change */
 			transition: background-color 0.3s ease-in-out;
@@ -2425,4 +2381,106 @@ input, select, textarea {
 
 		}
   
+  /* Blog Cards */
+
+  .blog-cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px; /* Adjust the gap between cards as needed */
+  }
+
+  .blog-card {
+	width: calc(50% - 10px); /* Adjust the width of each card to fit two side by side with some gap */
+	border-radius: 0px; /* Rounded corners */
+	border: none; /* Remove default border */
+	background-color: #ffffff; /* Card background color */
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+	padding: 20px;
+	text-align: center; /* Center the content horizontally inside each card */
+	position: relative;
+	transition: box-shadow 0.5s ease; /* Add smooth transition effect to the box shadow */
+  }
   
+  .blog-card img {
+	width: 100%;
+	border-radius: 0px;
+  }
+  
+  .blog-card h2 {
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+  }
+  
+  .blog-card p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+  }
+  
+  .blog-date {
+	font-size: 14px;
+	color: #000000;
+	margin-top: 10x;
+  }
+
+  .blog-desc {
+	margin-top: -10px;
+  }
+  
+  .read-more-btn {
+		display: inline-block;
+			padding: 10px 20px;
+			background-color: #23adc5;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 0px;
+			font-size: 16px;
+			line-height: 1.5em;
+			justify-content: center;
+			align-items: center;
+			margin-top: -10px;
+			/* Add transition to smoothly animate the background color change */
+			transition: background-color 0.3s ease-in-out;
+  }
+  
+  .read-more-btn:hover {
+	background-color: rgb(41, 95, 109);
+  }
+
+  .image-container {
+	width: 100%; /* Ensure the image container takes full width inside the blog card */
+	padding-top: 100%; /* Set the aspect ratio for the square (1:1) */
+	position: relative; /* Position the image container */
+	overflow: hidden; /* Hide any overflow from the image */
+  }
+  
+  .image-container img {
+	position: absolute; /* Position the image within the container */
+	top: 0;
+	left: 0;
+	width: 100%; /* Set the image width to be equal to the container width */
+	height: 100%; /* Set the image height to be equal to the container height */
+	object-fit: cover; /* Keep the image proportions while filling the square */
+	border-radius: 8;
+  }
+  
+	/* Apply the same size to all images */
+	.image img {
+		width: 100%; /* Set the width to 100% of their container */
+		height: 400px; /* Set a fixed height (you can adjust this value as needed) */
+		object-fit: cover; /* This will maintain the aspect ratio and crop the images if necessary */
+  }
+  
+	/* Responsive Layout for Blog Cards */
+	@media screen and (max-width: 768px) {
+		.blog-cards-container {
+			justify-content: center; /* Center the cards horizontally on smaller screens */
+		}
+		
+		.blog-card {
+			width: 100%; /* Set the width of each card to full width on smaller screens */
+			margin-bottom: 20px; /* Add some margin between cards for better spacing */
+		}
+	}
