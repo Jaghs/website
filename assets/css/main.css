@@ -2118,7 +2118,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding: 1em 0;
+				padding: 5em 0;   /* gap between wrapper and phone screen edge */
 				max-width: calc(100% - 2em);
 			}
 
