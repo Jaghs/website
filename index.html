@@ -451,8 +451,9 @@
 				  document.getElementById("blog-header").style.display = "none"; // Hide the blog header
 				}
 				
-				  // Scroll to the top of the page after showing the content
-  				  window.scrollTo(0, 0);
+				  // Scroll the parent container of blog content to the top
+				  var blogContentContainer = document.getElementById("blog").parentNode;
+				  blogContentContainer.scrollTop = 0;
 
 				function hideBlog(blogId) {
 				  document.getElementById(blogId).style.display = "none"; // Hide the selected blog content
