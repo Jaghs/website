@@ -131,12 +131,14 @@
 								</section>
 							</article>
 
-						<!-- Blog -->
+							<!-- Blog -->
 							<article id="blog" class="panel">
+								<div id="blog-header">
 								<header>
 									<h2>Blog 📫</h2>
 								</header>
-								<p>
+								<div id="welcome-paragraph">
+									<p>
 									Welcome to my blog! <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-
 									Emojis/master/Emojis/Hand%20gestures/Writing%20Hand%20Light%20Skin%20Tone.png" 
 									alt="Writing Hand Light Skin Tone" width="25" height="25" /> Here, I will share what I'm up to and 
@@ -145,40 +147,79 @@
 									Travel%20and%20places/Airplane.png" alt="Airplane" width="25" height="25" />
 									<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/
 									Objects/Camera%20with%20Flash.png" alt="Camera with Flash" width="25" height="25" />							
-								</p>	
-							<!-- Blog Cards Container -->
-								<div class="blog-cards-container"> <!-- Create a container that encompasses all the blogs so css effects all of them properly ex. horizontal stack -->
-									<!-- Italy Blog Card -->
-										<div class="blog-card">
-											<div class="image-container">
-											<img src="images/blog/italy/italy_cover.JPG" alt="Blog Image">
-											</div>
-											<h2>Trip to Italy</h2>
-											<p class="blog-date">June 2023</p>
-											<p class ="blog-desc">Summer trip to Lake Como, Rome, Florence and Verona 🍝</p>
-											<a href="blog-link.html" class="read-more-btn">Read More</a>
-										</div>
-									<!-- Japan Blog Card -->
-										<div class="blog-card">
-											<div class="image-container">
-											<img src="images/blog/japan/japan_cover.JPG" alt="Blog Image">
-											</div>
-											<h2>Trip to Japan</h2>
-											<p class="blog-date">June 2023</p>
-											<p class ="blog-desc">Summer trip to Tokyo, Kyoto and Nara 🏯</p>
-											<a href="blog-link.html" class="read-more-btn">Read More</a>
-										</div>
-									<!-- Last of Us Blog Card -->
-									<div class="blog-card">
-										<div class="image-container">
-										<img src="images/blog/thelastofus/thelastofus_cover.jpg" alt="Blog Image">
-										</div>
-										<h2>The Last of Us</h2>
-										<p class="blog-date">January 2023</p>
-										<p class ="blog-desc">I got the special opportunity to make an appearance in The Last of Us 🎬</p>
-										<a href="blog-link.html" class="read-more-btn">Read More</a>
-									</div>
+									</p>
 								</div>
+							</div>	
+								<!-- Blog Cards Container -->
+								<div id="blog-cards" class="blog-cards-container">
+								<!-- Italy Blog Card -->
+								<div class="blog-card">
+									<div class="image-container">
+									<img src="images/blog/italy/italy_cover.JPG" alt="Blog Image">
+									</div>
+									<h2>Trip to Italy</h2>
+									<p class="blog-date">June 2023</p>
+									<p class="blog-desc">Summer trip to Lake Como, Rome, Florence and Verona 🍝</p>
+									<button class="read-more-btn" onclick="showBlog('italy')">Read More</button>
+								</div>
+								<!-- Japan Blog Card -->
+								<div class="blog-card">
+									<div class="image-container">
+									<img src="images/blog/japan/japan_cover.JPG" alt="Blog Image">
+									</div>
+									<h2>Trip to Japan</h2>
+									<p class="blog-date">June 2023</p>
+									<p class="blog-desc">Summer trip to Tokyo, Kyoto and Nara 🏯</p>
+									<button class="read-more-btn" onclick="showBlog('japan')">Read More</button>
+								</div>
+								<!-- Last of Us Blog Card -->
+								<div class="blog-card">
+									<div class="image-container">
+									<img src="images/blog/thelastofus/thelastofus_cover.jpg" alt="Blog Image">
+									</div>
+									<h2>The Last of Us</h2>
+									<p class="blog-date">January 2023</p>
+									<p class="blog-desc">I got the special opportunity to make an appearance in The Last of Us 🎬</p>
+									<button class="read-more-btn" onclick="showBlog('lastofus')">Read More</button>
+								</div>
+							</div>
+
+								<!-- Blog Content Section -->
+							<div id="blog-content" style="display: none;">
+								<!-- Italy Blog Content -->
+								<div id="italy" style="display: none;">
+								<header>
+									<h2>Trip to Italy</h2>
+								</header>
+								<p>
+									This is the content for the blog post about the trip to Italy.
+									<!-- Add your blog content here -->
+								</p>
+								<button class="back-btn" onclick="hideBlog('italy')">Back</button>
+								</div>
+								<!-- Japan Blog Content -->
+								<div id="japan" style="display: none;">
+								<header>
+									<h2>Trip to Japan</h2>
+								</header>
+								<p>
+									This is the content for the blog post about the trip to Japan.
+									<!-- Add your blog content here -->
+								</p>
+								<button class="back-btn" onclick="hideBlog('japan')">Back</button>
+								</div>
+								<!-- Last of Us Blog Content -->
+								<div id="lastofus" style="display: none;">
+								<header>
+									<h2>The Last of Us</h2>
+								</header>
+								<p>
+									This is the content for the blog post about The Last of Us.
+									<!-- Add your blog content here -->
+								</p>
+								<button class="back-btn" onclick="hideBlog('lastofus')">Back</button>
+								</div>
+							</div>
 
 							</article>
 
@@ -371,6 +412,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function showBlog(blogId) {
+				  hideAllBlogs(); // Hide all blog content
+				  document.getElementById(blogId).style.display = "block"; // Show the selected blog content
+				  document.getElementById("blog-content").style.display = "block"; // Show the blog content section
+				  document.getElementById("blog-cards").classList.add("hide-blog-cards"); // Hide the blog cards
+				  document.getElementById("blog-header").style.display = "none"; // Hide the blog header
+				}
+				
+				function hideBlog(blogId) {
+				  document.getElementById(blogId).style.display = "none"; // Hide the selected blog content
+				  document.getElementById("blog-content").style.display = "none"; // Hide the blog content section
+				  document.getElementById("blog-cards").classList.remove("hide-blog-cards"); // Show the blog cards
+				  document.getElementById("blog-header").style.display = "block"; // Show the blog header
+				}
+				
+				function hideAllBlogs() {
+				  var blogs = ["italy", "japan", "lastofus"];
+				  blogs.forEach(function(blogId) {
+					document.getElementById(blogId).style.display = "none";
+				  });
+				}
+				
+				// Initially hide the blog content section
+				document.getElementById("blog-content").style.display = "none";
+				</script>  
 	</body>
 </html>
