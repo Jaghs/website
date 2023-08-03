@@ -2480,7 +2480,7 @@ input, select, textarea {
 			justify-content: center; /* Center the cards horizontally on smaller screens */
 		}
 		
-		.blog-card .hide-blog-cards{
+		.blog-card {
 			width: 100%; /* Set the width of each card to full width on smaller screens */
 			margin-bottom: 20px; /* Add some margin between cards for better spacing */
 		}
