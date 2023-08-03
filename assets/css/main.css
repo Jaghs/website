@@ -2476,7 +2476,7 @@ input, select, textarea {
   
 	/* Responsive Layout for Blog Cards */
 	@media screen and (max-width: 768px) {
-		.blog-cards-container .hide-blog-cards {
+		.blog-cards-container {
 			justify-content: center; /* Center the cards horizontally on smaller screens */
 		}
 		
