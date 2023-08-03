@@ -2476,11 +2476,11 @@ input, select, textarea {
   
 	/* Responsive Layout for Blog Cards */
 	@media screen and (max-width: 768px) {
-		.blog-cards-container {
+		.blog-cards-container .back-btn {
 			justify-content: center; /* Center the cards horizontally on smaller screens */
 		}
 		
-		.blog-card {
+		.blog-card .back-btn {
 			width: 100%; /* Set the width of each card to full width on smaller screens */
 			margin-bottom: 20px; /* Add some margin between cards for better spacing */
 		}
