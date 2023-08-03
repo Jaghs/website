@@ -2484,6 +2484,10 @@ input, select, textarea {
 			width: 100%; /* Set the width of each card to full width on smaller screens */
 			margin-bottom: 20px; /* Add some margin between cards for better spacing */
 		}
+
+		.read-more-btn {
+			padding: 5px 10px; /* Adjust the padding as needed */
+		}
 	}
 
 	/* Add this CSS to hide the blog cards in the second view */
