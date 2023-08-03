@@ -2430,7 +2430,7 @@ input, select, textarea {
 	margin-top: -10px;
   }
   
-  .read-more-btn {
+  .read-more-btn, .back-btn {
 		display: inline-block;
 			padding: 10px 20px;
 			background-color: #23adc5;
@@ -2446,7 +2446,7 @@ input, select, textarea {
 			transition: background-color 0.3s ease-in-out;
   }
   
-  .read-more-btn:hover {
+  .read-more-btn:hover, .backbtn:hover {
 	background-color: rgb(41, 95, 109);
   }
 
@@ -2484,4 +2484,9 @@ input, select, textarea {
 			width: 100%; /* Set the width of each card to full width on smaller screens */
 			margin-bottom: 20px; /* Add some margin between cards for better spacing */
 		}
+	}
+
+	/* Add this CSS to hide the blog cards in the second view */
+	.hide-blog-cards {
+	  display: none;
 	}
