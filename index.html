@@ -39,6 +39,7 @@
 						<a href="#experience" class="icon solid fa-briefcase"><span>Experience</span></a>
 						<a href="#projects" class="icon solid fa-pen"><span>Projects</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="#pookie" class="icon solid fa-heart"><span>🐻</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -50,9 +51,9 @@
 									<h1>Hi, I'm Jagvir <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand%20Light%20Skin%20Tone.png" alt="Waving Hand Light Skin Tone" width="50" height="50"></h1> <!--<img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="43px" height="40px" alt="wave"></h1>-->
 									<p>Data Analyst & Accountant</p>
 									<!-- Add the button for your resume below -->
-									<a href="assets/pdf/jagvirdhesi_resume.pdf" class="resume-button"><span>Resume</span></a>
-									<a href="https://www.linkedin.com/in/jagvirdhesi/" class="linkedin-button"><i class="fab fa-linkedin fa-lg"></i></a>
-									<a href="https://github.com/Jaghs" class="github-button"><i class="fab fa-github fa-lg"></i></a>
+									<a href="assets/pdf/jagvirdhesi_resume.pdf" class="resume-button" target="_blank"><span>Resume</span></a>
+									<a href="https://www.linkedin.com/in/jagvirdhesi/" class="linkedin-button" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+									<a href="https://github.com/Jaghs" class="github-button" target="_blank"><i class="fab fa-github fa-lg"></i></a>
 								</header>
 								<a href="#about" class="jumplink pic">
 									<img src="images/aboutme/me.jpg" alt="" />
@@ -440,7 +441,81 @@
 										</div>
 									</div>
 								</form>
-							</article>				
+							</article>		
+
+						<!-- 🐻 -->
+						<article id="pookie" class="panel" style="opacity: 0; visibility: hidden;">
+							<header>
+								<h2>To My Wonderful and Insanely Cute Rita</h2>
+							</header>
+							<p>
+								Happy Birthday! I LOVE YOU SO MUCH! 💗 You have no idea how grateful 
+								I am for meeting you. You've changed me as a person, and I've 
+								learned so many things about myself 🤓 I'll forever be thankful for that!
+							</p>
+							<p>
+								Each and every day, I look forward to talking to you and hearing 
+								about your day! I love being a part of your world, even if it's from a 
+								distance. You make me feel at ease, and most importantly, I feel like I 
+								can be myself around you.
+							</p>	
+							<p>
+								Now, we can shift gears to Montreal! I'm so excited and can't wait to 
+								plan all that out with you over the next months! And while we wait, we've 
+								got lots of stuff to do (specifically HIMYM) and play some more games hehe.
+							</p>	
+							<p>
+								Thank you for being my joy and my happiness! I'm so proud of you 🥹
+							</p>	
+							<p>
+								Your brown sugar,
+							</p>	
+								Jaggy Jag
+							</p>	
+							<p>
+								Here are some of my fav silly pics:
+							</p>
+							<section>
+								<div class="row">
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/1e.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/17.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/4e.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/5.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/6e.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/15.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/9e.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/10.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/11e.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/12.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/13e.jpg" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<a class="image fit"><img src="images/pooks/14.jpg" alt=""></a>
+									</div>
+								</div>
+							</section>
+						</article>
 
 					</div>
 			</div>
@@ -480,5 +555,55 @@
 				// Initially hide the blog content section
 				document.getElementById("blog-content").style.display = "none";
 				</script>  
+
+			<script>
+				// JavaScript to show the content when the correct password is entered
+				async function showContent() {
+					const encryptedPassword = "UklUQQ==";
+			
+					let password;
+					let attempts = 0;
+					const maxAttempts = 4;
+			
+					do {
+						password = prompt("Enter the password 🔑");
+			
+						if (password === null) {
+							// User clicked Cancel
+							alert("Access denied ❌");
+							return;
+						}
+			
+						attempts++;
+			
+						if (attempts === maxAttempts) {
+							alert("bro 💀");
+						}
+			
+					} while (decryptPassword(encryptedPassword) !== password);
+			
+					// If the loop completes, it means the correct password is entered
+					const pookieArticle = document.getElementById("pookie");
+					pookieArticle.style.opacity = "1";
+					pookieArticle.style.visibility = "visible";
+				}
+			
+				// Attach the showContent function to the click event of the heart icon
+				document.querySelector('.fa-heart').addEventListener('click', showContent);
+			
+				// Function to decrypt the password
+				function decryptPassword(encryptedPassword) {
+					const decryptedPassword = atob(encryptedPassword);
+					return decryptedPassword;
+				}
+			</script>
+
+		<script>
+			// Disable right-clicking
+			document.addEventListener('contextmenu', function (e) {
+				e.preventDefault();
+			});
+		</script>				
+			
 	</body>
 </html>
