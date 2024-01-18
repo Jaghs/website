@@ -572,7 +572,7 @@
 					let password;
 					let attempts = 0;
 					const maxAttempts = 4;
-					const maxxAttempts = 8;
+					const hintAttempts = 8;
 			
 					do {
 						password = prompt("enter the password 🔑");
@@ -589,7 +589,7 @@
 							alert("bro 💀");
 						}
 
-						if (attempts === maxxAttempts) {
+						if (attempts === hintAttempts) {
 							alert("hint: 🥥");
 						}
 			
