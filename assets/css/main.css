@@ -1924,8 +1924,8 @@ input, select, textarea {
 				padding: 14px 22px; 
 			}
 			.photography-button .icon {
-				font-size: 19px; /* Adjust this value as needed */
-				line-height: 1.2em; /* Adjust this value as needed */
+				font-size: 25px; /* Adjust this value as needed */
+				line-height: 1.0em; /* Adjust this value as needed */
 			}
 		}
 
