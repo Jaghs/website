@@ -1923,6 +1923,10 @@ input, select, textarea {
 				font-size: 20px; 
 				padding: 14px 22px; 
 			}
+			.photography-button .icon {
+				font-size: 19px; /* Adjust this value as needed */
+				line-height: 1.2em; /* Adjust this value as needed */
+			}
 		}
 
 /* List */
